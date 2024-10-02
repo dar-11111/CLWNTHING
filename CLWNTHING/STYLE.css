@@ -94,16 +94,6 @@ margin:15px 0 40px;
     transition: 1s;
 }
 
-/*----- Look Book ----*/
-
-.look-book{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-
 /* 
 @media(max-width: 700px){
     .text-box{
