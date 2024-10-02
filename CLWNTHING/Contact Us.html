@@ -3,25 +3,224 @@
 <head> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLWNTHING APPAREL</title>
-    <link rel="stylesheet" href="STYLE.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
 </head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Calistoga", serif;
+    font-weight: 10;
+    font-style: normal;  
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(back1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+img {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    
+
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links  ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px; 
+}
+.nav-links  ul li::after{
+    content: "" ;
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links  ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%; 
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 73px;
+	
+}
+.text-box p{
+font-size: 34px;
+margin:20px 0 40px;
+
+}
+.text-box{
+    position: relative;
+    top: 250px;
+}
+.Interested-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.Interested-btn:hover {
+    color: black;
+    border: 1px solid black;
+    background: red;
+    transition: 1s;
+}
+
+/*----- Look Book ----*/
+
+.look-book{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* 
+@media(max-width: 700px){
+    .text-box{
+        position: absolute;
+        top: 400px;
+    }
+    .text-box h1{
+        font-size: 25px;
+    }
+    .text-box p{
+        font-size: 15px;
+        margin:15px 50px 30px;
+    }
+    img{
+        display: flex;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        top: -100px;
+        left: -10px;
+    } */
+.container {
+            width: 50%;
+            margin: auto;
+            overflow: hidden;
+
+	 form {
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        form input, form textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        form input[type="submit"] {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background: #555;
+        }
+	
+	
+
+</style>
 <body>
-    <section class="contact-us">
+    <section class="header">
         <nav>
-            <a href="CLWNTHING.html"><img src="bg/clwnthinglogo.png"></a>
+            <a href="CLWNTHING.html"><img src="bcl.png" href= file:///C:/Users/dhari/OneDrive/Desktop/CLWNTHING/CLWNTHING.html></a>
             <div class="nav-links">
             <ul>
-                <li><a href="file:///C:/Users/user/Desktop/MY%20HTML/CLWNTHING.html#">HOME</a></li>
-                <li><a href="file:///C:/Users/user/Desktop/MY%20HTML/LookBook.html#">LOOKBOOK</a></li>
-                <li><a href="file:///C:/Users/user/Desktop/MY%20HTML/Blog.html#">BLOG</a></li>
-                <li><a href="https://dar-11111.github.io/CLWNTHING/CLWNTHING/Aboutus.html#">ABOUT US</a></li>
-                <li><a href="file:///C:/Users/user/Desktop/MY%20HTML/Contact%20Us.html#">CONTACT US</a></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">LOOKBOOK</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
             </ul>
           </div>
         </nav>
+    <div class="text-box">
+    <section class="look-book">
+        <h1> Contact Us!</h1>
+<h2>     <div class="container">
+	
+        <form action="/submit_form" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+			
+        </form>
+    </div>
+
+</h2>
+        
+    </div>
     </section>
+                  
+                        
+
+    <script>
+window.embeddedChatbotConfig = {
+chatbotId: "QrCPyjUrLgivcAtHtP_oH",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="QrCPyjUrLgivcAtHtP_oH"
+domain="www.chatbase.co"
+defer>
+</script>
 </body>
 </html>
