@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLWNTHING APPAREL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Calistoga", serif;
+    font-weight: 10;
+    font-style: normal;  
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(back1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+img {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -137px;
+    left: 40px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links  ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links  ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px; 
+}
+.nav-links  ul li::after{
+    content: "" ;
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links  ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%; 
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 73px;
+	
+}
+.text-box p{
+font-size: 34px;
+margin:20px 0 40px;
+
+}
+.text-box{
+    position: relative;
+    top: 250px;
+}
+.Interested-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.Interested-btn:hover {
+    color: black;
+    border: 1px solid black;
+    background: red;
+    transition: 1s;
+}
+
+/*----- Look Book ----*/
+
+.look-book{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/* 
+@media(max-width: 700px){
+    .text-box{
+        position: absolute;
+        top: 400px;
+    }
+    .text-box h1{
+        font-size: 25px;
+    }
+    .text-box p{
+        font-size: 15px;
+        margin:15px 50px 30px;
+    }
+    img{
+        display: flex;
+        width: 200px;
+        height: 300px;
+        position: absolute;
+        top: -100px;
+        left: -10px;
+    } */
+	
+	
+	
+	}
+
+</style>
+<body>
+    <section class="header">
+        <nav>
+            <a href="CLWNTHING.html"><img src="bcl.png"></a>
+            <div class="nav-links">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">LOOKBOOK</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+          </div>
+        </nav>
+    <div class="text-box">
+    <section class="look-book">
+        <h1> About </h1>
+        <p><h3>At CLWNTHNG, we believe in empowering self-expression through fashion. Founded in [year], our mission is to provide high-quality, stylish clothing that fits every personality and occasion. We focus on sustainability ensuring our materials and practices are kind to our planet.
+</h3></p>
+
+
+    </section>
+        <h2> OBJECTIVES </h2>
+        <P><h3> We in CLWNTHING we produce high-quality clothing using durable materials, while continuously incorporating innovative designs that appeal to streetwear enthusiasts. We  build a loyal community by engaging directly with customers through social media, pop-up events, and collaborations with local artists or influencers.</h3></P>
+        
+    </div>
+    </section>
+    
+</body>
+</html>
